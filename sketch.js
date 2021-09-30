@@ -21,7 +21,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(640, 480);
+  createCanvas(800, 800);
   let frames = spritedata.frames;
   for (let i = 0; i < frames.length; i++) {
     let pos = frames[i].position;
@@ -29,8 +29,8 @@ function setup() {
     animation.push(img);
   }
 
-  for (let i = 0; i < 5; i++) {
-    horses[i] = new Sprite(animation, 0, i * 75, random(0.1, 0.4));
+  for (let i = 0; i < 10; i++) {
+    horses[i] = new Sprite(animation, 0, i * 75, random(0.1, 1));
   }
 }
 
